@@ -40,7 +40,7 @@ faucetMessage = "minicord.finnieboi.tk wooohooooooooooooo epic faucet"
 faucetPassword = os.getenv("FAUCET_PASSWORD")
 ducoserverAddress = "server.duinocoin.com"
 ducosererPorts = [2811,2812,2813]
-minimumFaucetBalance = 10
+minimumFaucetBalance = 0.1
 
 bannedlist = {}
 
@@ -105,11 +105,11 @@ def giveducos():
 
     if ducoUsername in bannedlist:
         faucetlog(f"lmao {ducoUsername} tried to use the faucet but he/she is banned")
-        return "uh oh looks like you are banned from using the faucet if you want to get unbanned dm me on duinocoin discord phantom32#5148",400
+        return "uh oh looks like you are banned from using the faucet if you want to get unbanned dm me on duinocoin discord beano09#5665",400
 
     if getip(request) not in timers.ipsfaucethtml :
         faucetlog(f"{ducoUsername} doesnt look like he is in all ip lists XD nomoney for yuo")
-        return "uh oh, your actions looks sussy, if you are not a bot contact me on duinocoin discord phantom32#5148",401
+        return "uh oh, your actions looks sussy, if you are not a bot contact me on duinocoin discord beano09#5665",401
         
     if ducoUsername in timers.usersnamelist or getip(request) in timers.usersiplist:
         faucetlog(f"{ducoUsername} tried to use the faucet but they used it in the last hour")
