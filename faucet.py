@@ -2,7 +2,7 @@
 #phentem facet
 
 DEBUG = False
-PORT = 5000
+PORT = 6464
 
 DISABLED = False
 disabledMessage = "faucet is disabled"
@@ -34,9 +34,9 @@ limiter = Limiter(
 )
 # Start Global variables
 
-faucetVersion = "Phantom Faucet beta 0.3"
-faucetUsername = "phantom_faucet"
-faucetMessage = "phantom32.tk wooohooooooooooooo epic faucet"
+faucetVersion = "Epic Faucet beta 0.3"
+faucetUsername = "epic_faucet"
+faucetMessage = "minicord.finnieboi.tk wooohooooooooooooo epic faucet"
 faucetPassword = os.getenv("FAUCET_PASSWORD")
 ducoserverAddress = "server.duinocoin.com"
 ducosererPorts = [2811,2812,2813]
